@@ -1,9 +1,0 @@
-{
-    "presets": ["babel-preset-expo"],
-    "plugins": ["transform-decorators-legacy", "inline-dotenv"],
-    "env": {
-        "development": {
-            "plugins": ["transform-react-jsx-source"]
-        }
-    }
-}
