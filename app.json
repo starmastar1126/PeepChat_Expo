@@ -1,0 +1,57 @@
+{
+    "expo": {
+        "name": "PeepX",
+        "description": "This project is really great.",
+        "slug": "peepx",
+        "privacy": "unlisted",
+        "sdkVersion": "32.0.0",
+        "platforms": ["ios", "android"],
+        "version": "0.9.4",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.peepconnect.peepx",
+            "infoPlist": {
+                "NSLocationWhenInUseUsageDescription": "This app uses the location to check other near users.",
+                "NSPhotoLibraryUsageDescription": "This app uses Photo library to share on it's timeline and update your own avatar."
+            }
+        },
+        "android": {
+            "package": "com.peepconnect.peepx",
+            "versionCode": 13,
+            "config": {
+                "googleSignIn": {
+                    "certificateHash": "BC7C280AF5F39CF365A227E1AB2B1E7874C701F3"
+                }
+            },
+            "permissions": [
+                "ACCESS_COARSE_LOCATION",
+                "ACCESS_FINE_LOCATION",
+                "CAMERA",
+                "RECORD_AUDIO",
+                "READ_CONTACTS",
+                "READ_CALENDAR",
+                "READ_EXTERNAL_STORAGE",
+                "WRITE_EXTERNAL_STORAGE",
+                "READ_CALENDAR",
+                "WRITE_CALENDAR"
+            ]
+        },
+        "extra": {
+            "googleClientIdAndroid": "moc.tnetnocresuelgoog.sppa.o74d85noqku0l54rg80qofgf9nu3keag-85264857548",
+            "googleClientIdIos": "moc.tnetnocresuelgoog.sppa.h7s6t25eibjhcma8m4pq7ds3chn00jv9-85264857548",
+            "jwtTokenStorageKey": "@peepx/token",
+            "userLocationStorageKey": "@peepx/location"
+        }
+    }
+}
